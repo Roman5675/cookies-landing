@@ -1,0 +1,39 @@
+.magic {
+    padding-top: 161px;
+    padding-bottom: 200px;
+}
+
+.magic__column {
+    display: flex;
+    flex-direction: column;
+}
+.magic__title {
+    font-size: 90px;
+    line-height: 1;
+    max-width: 811px;
+    margin-bottom: 20px;
+    font-family: var(--steppe-extrabold);
+}
+.magic__subtitle {
+    max-width: 697px;
+    margin-bottom: 40px;
+}
+.magic__button {
+    width: 178px;
+    height: 58px;
+    border-radius: 29px;
+    border: none;
+    color: #5243F4;
+    cursor: pointer;
+}
+
+.magic__button:hover {
+    background-color: rgb(219, 230, 230);
+}
+
+.magic__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
