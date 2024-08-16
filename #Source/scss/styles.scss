@@ -1,0 +1,5 @@
+@use "sass:math";
+
+@import 'normalize' , 'fonts' , 'mixins' , 'media' , 'variables' , 'utils' , 'globals';
+
+@import 'blocks/header' , 'blocks/main' , 'blocks/footer';

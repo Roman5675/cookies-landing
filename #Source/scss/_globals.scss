@@ -1,0 +1,26 @@
+//Тут будут глобальные стили для элементов html и body, а также глобальные стили по тегам ссылок, кнопок, полей ввода
+body {
+    font-family: var(--font-family-base);
+    font-weight: 350;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #fff;
+    background-color: #5243F4;
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 , h2 , h3 , h4 {
+    font-weight: normal;
+} //Стандартное значение в браузерах bold(700)
