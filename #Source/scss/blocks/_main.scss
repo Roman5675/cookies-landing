@@ -164,6 +164,9 @@
 .order {
     padding-bottom: 102px;
     position: relative;
+    .container {
+        position: relative;
+    }
 }
 
 .order__block {
