@@ -1,3 +1,25 @@
+.button {
+    width: 178px;
+    height: 58px;
+    border-radius: 29px;
+    border: none;
+    color: #5243F4;
+    cursor: pointer;
+}
+
+.title {
+    font-family: var(--steppe-extrabold);
+    text-align: center;
+    font-size: 60px;
+    line-height: 1;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+//Section magic end
 .magic {
     padding-top: 161px;
     padding-bottom: 200px;
@@ -18,14 +40,6 @@
     max-width: 697px;
     margin-bottom: 40px;
 }
-.magic__button {
-    width: 178px;
-    height: 58px;
-    border-radius: 29px;
-    border: none;
-    color: #5243F4;
-    cursor: pointer;
-}
 
 .magic__button:hover {
     background-color: rgb(219, 230, 230);
@@ -36,4 +50,202 @@
     top: 0;
     right: 0;
     z-index: -1;
+}
+//Section magic end
+
+//Section products start
+.products {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.products__title {
+    margin-bottom: 110px;
+}
+
+.products__items {
+    display: grid;
+    grid-template-columns: repeat(3, 384px);
+    column-gap: 24px;
+    row-gap: 90px;
+}
+.products__item {
+    background-color: #ffffff;
+    color: #5D3427;
+}
+.products__item-image {
+    height: 202px;
+    text-align: center;
+    img {
+        height: 272px;
+        top: -70px;
+        position: relative;
+    }
+}
+.products__item-details {
+    padding: 24px;
+}
+.products__item-title {
+    font-family: var(--steppe-extrabold);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.products__item-subtitle {
+    height: 110px;
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.products__bottom-row {
+    display: flex;
+    justify-content: space-between;
+}
+.products__bottom-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+.products__bottom-left-price {
+    font-family: var(--steppe-extrabold);
+    color: #5243F4;
+    font-size: 24px;
+}
+.products__bottom-left-weight {
+    font-size: 12px;
+}
+.violet-button {
+    background-color: #5243F4;
+    color: #ffffff;
+}
+
+.violet-button:hover {
+    background-color: #3b2cd8;
+}
+//Section products end
+
+//Section love start
+.love {
+    padding-top: 64px;
+    padding-bottom: 150px;
+}
+.love__title {
+    margin-bottom: 40px;
+}
+
+.love__items {
+    display: flex;
+    gap: 20px;
+}
+
+.love__item {
+    width: 590px;
+    height: 453px;
+}
+
+.love__item-left {
+    display: flex;
+    flex-direction: column;
+    padding: 110px 80px;
+    gap: 20px;
+    color: #5D3427;
+    background-color: #ffffff;
+}
+.love__item-title {
+    font-family: var(--steppe-extrabold);
+    line-height: 1.1;
+    font-size: 24px;
+}
+
+//Section love end
+
+//Section order start
+.order {
+    padding-bottom: 102px;
+    position: relative;
+}
+
+.order__block {
+    display: flex;
+    gap: 109px;
+    margin-top: 103px;
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(50px);
+}
+.order__form {
+    margin-left: 200px;
+    max-width: 387px;
+    padding-top: 40px;
+    padding-bottom: 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.order__intro {
+    font-family: var(--steppe-extrabold);
+    font-size: 18px;
+}
+.order__form-inputs {
+    display: flex;
+    flex-direction: column;
+    input {
+        border: 1px solid white;
+        border-radius: 60px;
+        margin-bottom: 16px;
+        padding: 24px 22px;
+        font-size: 18px;
+        width: 385px;
+        height: 68px;
+        background: transparent;
+        color: #ffffff;
+        outline: none; //Чтобы браузер не добавлял специальную подсветку когда мы работаем с этим полем
+    }
+    ::placeholder {
+        color: rgba(255, 255, 255, 0.4);
+    }
+    button {
+        width: 387px;
+        height: 71px;
+    }
+}
+
+.order__block-image {
+    height: 501px;
+}
+.order__image {
+    height: 559px;
+    top: -58px;
+    position: relative;
+}
+
+.order__background-image {
+    position: absolute;
+    top: 0;
+    right: calc(100% - 810px);
+    z-index: -1;
+}
+
+//Section order end
+
+//Line
+.line__one {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: calc(100% - 960px);
+}
+
+.line__two {
+    position: absolute;
+    z-index: -1;
+    top: -40px;
+    left: 0;
+}
+
+.line__three {
+    position: absolute;
+    z-index: -1;
+    top: -920px;
+    left: 0;
 }
